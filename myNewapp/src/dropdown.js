@@ -38,13 +38,13 @@ class DropdownComponent extends React.Component {
     componentWillUpdate(nextProps, nextState){
       localStorage.setItem("jsonData", JSON.stringify(nextState.jsonData));
     }
-    //function passes the value from select box to Component.Data 
+    //function passes the value from select box to "data"
     onClick(){
       if((document.getElementById("dataYears").value == "null") || (document.getElementById("countryName").value == "null")){
         //alert user if country and year not selected
         window.alert("Select country and year");
       } else {
-        //pass data -> parent class(app) -> other component (data)
+        //pass data -> parent class(app) -> component class (data)
         this.props.onClick(
           document.getElementById("dataYears").value,
           this.state.jsonData[document.getElementById("countryName").value].data,

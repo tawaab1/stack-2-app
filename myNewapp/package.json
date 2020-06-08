@@ -6,8 +6,8 @@
     "start": "node ./bin/www",
     "debug": "DEBUG=myapp:* npm start",
     "webpack": "./node_modules/.bin/webpack",
-    "sass": "sass src/myStyles.scss:public/stylesheets/myStyle.css",
-    "deploy": "npm run babel & npm start & npm run webpack",
+    "sass": "sass src/myStyles.sass:public/stylesheets/myStyle.css",
+    "deploy": "npm run sass & npm start & npm run webpack",
     "build": "webpack"
   },
   "dependencies": {
