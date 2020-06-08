@@ -58,7 +58,7 @@ module.exports = {
 				loader: 'babel-loader'
 			},
 			{
-				test: /.css$/,
+				test: /\.(scss|css)$/,
 
 				use: [
 					{
@@ -66,14 +66,17 @@ module.exports = {
 					},
 					{
 						loader: 'style-loader'
-					},
+          },
 					{
 						loader: 'css-loader',
 
 						options: {
 							sourceMap: true
-						}
-					}
+            },
+          },
+          {
+            loader: 'sass-loader'
+          }
 				]
       },
       {
