@@ -20,7 +20,7 @@ class DropdownComponent extends React.Component {
     componentDidMount() {
       //grab data from web api if know data found in local storage
       if(!localStorage.getItem("jsonData")){
-        fetch('http://10.25.116.138:80/countries')
+        fetch('http://10.25.138.116:80/countries')
         .then(response => response.json())
         .then($response => {
           this.setState({
