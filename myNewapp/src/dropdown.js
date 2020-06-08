@@ -40,14 +40,14 @@ class DropdownComponent extends React.Component {
     }
     //function passes the value from select box to "data"
     onClick(){
-      if((document.getElementById("dataYears").value == "null") || (document.getElementById("countryName").value == "null")){
+      if((document.getElementById("dataYears").value == "null") || (document.getElementById("name").value == "null")){
         //alert user if country and year not selected
         window.alert("Select country and year");
       } else {
         //pass data -> parent class(app) -> component class (data)
         this.props.onClick(
           document.getElementById("dataYears").value,
-          this.state.jsonData[document.getElementById("countryName").value].data,
+          this.state.jsonData[document.getElementById("name").value].data,
           );
       }
     }
@@ -62,7 +62,7 @@ class DropdownComponent extends React.Component {
         <div>
           {this.state.isLoaded ? <div>Data has been Loaded</div> : <div>Loading Data...</div>}
           <div>
-            <select id="countryName">
+            <select id="name">
               <option value="null">Please select a country:</option>
               {this.state.jsonData.map((country)=>{
                 index ++
