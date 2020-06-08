@@ -75,8 +75,23 @@ module.exports = {
 						}
 					}
 				]
-			}
+      },
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        query:
+        {
+            presets:['@babel/react']
+        }
+    }
 		]
+  },
+  
+  
+  output: {
+		filename: '[name].js',
+		path: path.resolve(__dirname, 'public/javascripts')
 	},
 
 	optimization: {
