@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './public/sass/myStyles.sass';
+import './myStyles.sass';
 
 const title = 'My Minimal React Webpack Babel Setup';
 
