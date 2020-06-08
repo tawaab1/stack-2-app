@@ -16,9 +16,9 @@ class Data extends React.Component {
                 </div>
                 : 
                 <div>
-                    <h3>Life Expectency:</h3>
-                    <h3>Food Supply Per Person Per Day (Kg):</h3>
-                    <h3>Sugar Per Person Per Day (g):</h3>
+                    <p>Food supply per perso: </p>
+                    <p>Life expectancy: </p>
+                    <p>PC per 100 people: </p>
                 </div>
                 }
             </div>
