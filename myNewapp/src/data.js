@@ -16,7 +16,7 @@ class Data extends React.Component {
                 </div>
                 : 
                 <div>
-                    <p>Food supply per perso: </p>
+                    <p>Food supply per person: </p>
                     <p>Life expectancy: </p>
                     <p>PC per 100 people: </p>
                 </div>
