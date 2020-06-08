@@ -1,6 +1,6 @@
 import React from 'react';
-import Data from './component/data';
-import Dropdown from './component/dropdown';
+import Data from './data';
+import Dropdown from './dropdown';
 
 class App extends React.Component {
     constructor(props){
