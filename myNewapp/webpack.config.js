@@ -58,7 +58,7 @@ module.exports = {
 				loader: 'babel-loader'
 			},
 			{
-				test: /\.(scss|css)$/,
+				test: /.(scss|css)$/,
 
 				use: [
 					{
@@ -66,35 +66,24 @@ module.exports = {
 					},
 					{
 						loader: 'style-loader'
-          },
+					},
 					{
 						loader: 'css-loader',
 
 						options: {
 							sourceMap: true
-            },
-          },
-          {
-            loader: 'sass-loader'
-          }
+						}
+					},
+					{
+						loader: 'sass-loader',
+
+						options: {
+							sourceMap: true
+						}
+					}
 				]
-      },
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader',
-        query:
-        {
-            presets:['@babel/react']
-        }
-    }
+			}
 		]
-  },
-  
-  
-  output: {
-		filename: '[name].js',
-		path: path.resolve(__dirname, 'public/javascripts')
 	},
 
 	optimization: {
