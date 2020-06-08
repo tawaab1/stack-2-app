@@ -1,3 +1,10 @@
-import './myStyles.scss';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './myStyles.scss'
 
-console.log("Hello World from your main file!");
+const title = 'My Minimal React Webpack Babel Setup';
+
+ReactDOM.render(
+<div>{title}</div>,
+document.getElementById('app')
+);
