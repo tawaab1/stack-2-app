@@ -1,9 +1,14 @@
 body {
-  background-color: #97D9F8;
+  background-color: #ffffff;
 }
 
 h1 {
-  color: blueviolet;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p {
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /*# sourceMappingURL=myStyle.css.map */
