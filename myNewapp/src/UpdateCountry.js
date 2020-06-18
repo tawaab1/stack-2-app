@@ -8,7 +8,7 @@ class UpdateCountry extends React.Component {
     render(){
         return (
             <form>
-              <p>Update Country: </p>
+              <h3>Update Country: </h3>
               <br/>
               <input type ="text" id="updateCountry" />
               <br/>

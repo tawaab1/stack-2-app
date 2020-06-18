@@ -8,7 +8,7 @@ class DeleteCountry extends React.Component {
     render(){
         return (
             <form>
-              <p>Delete Country: </p>
+              <h3>Delete Country: </h3>
               <br/>
               <input type ="text" id="deleteCountry" />
               <br/>
