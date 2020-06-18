@@ -1,7 +1,8 @@
 import React from 'react';
 import Data from './data';
 import Dropdown from './dropdown';
-import AddCountry from './addCountry';
+import DeleteCountry from './DeleteCountry';
+import UpdateCountry from './UpdateCountry';
 
 class App extends React.Component {
     constructor(props){
@@ -22,7 +23,9 @@ class App extends React.Component {
             <div>
                 <Dropdown onClick={(year, data) => this.updateState(year, data)}/><br/>
                 <Data year={this.state.year} data={this.state.data}/>
-                <AddCountry />
+                <UpdateCountry />
+                <br/>
+                <DeleteCountry />
             </div>
         )
     }
