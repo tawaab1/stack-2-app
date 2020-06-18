@@ -79,7 +79,7 @@ class DropdownComponent extends React.Component {
             </select>
 
             <br/>
-            <button id="submitButton" value="submit" onClick={() => this.onClick()}>Submit</button>
+            <button id="submitButton" value="submit" onClick={() => this.onClick()}>Fetch Data</button>
           </div>
         </div>
       )   

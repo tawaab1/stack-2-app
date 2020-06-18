@@ -9,7 +9,9 @@ class DeleteCountry extends React.Component {
         return (
             <form>
               <label for="country">Delete Country: </label>
+              <br/>
               <input type ="text" id="deleteCountry" />
+              <br/>
               <button id="submitButton" value="delete">Delete Country</button>
             </form>
         )
