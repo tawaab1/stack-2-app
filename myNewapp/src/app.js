@@ -20,7 +20,7 @@ class App extends React.Component {
     }
     render(){
         return (
-            <div>
+            <div class="content-container">
                 <Dropdown onClick={(year, data) => this.updateState(year, data)}/><br/>
                 <Data year={this.state.year} data={this.state.data}/>
                 <UpdateCountry />
